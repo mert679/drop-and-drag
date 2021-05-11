@@ -1,0 +1,37 @@
+<body onload="populate()">
+  <div class="main">
+  <h1 style="color:grey;text-align:center">Can you identify the frontend and backend technologies?</h1>
+<table border=0 align=center>
+  <tr>
+      <td colspan="2">Drag and drop the below terms into the correct bins</td>
+  </tr>
+  <tr>
+      <td colspan="2"><span id="options"></span></td>
+  </tr>
+  <tr>
+      <td id="category1"></td>
+      <td id="category2"></td>
+  </tr>
+  <tr>
+      <td><div id="category1values" ondrop="drop(event)" ondragover="allowDrop(event)"
+  style="background-color:tan" class="xyz"></div></td>
+      <td><div id="category2values" ondrop="drop(event)" ondragover="allowDrop(event)"
+  style="background-color:grey"  class="xyz"></div></td>
+  </tr>
+  <tr>
+      <td colspan=2>
+        
+        <br>
+        <br>
+          <button onclick="getscore()"><font size=5>Check your score
+          </button> &nbsp;&nbsp;
+      Score <output id="score">0</output></font>
+      <br>
+      <br>
+      <br>
+      <button onclick="location.reload()">Start Over</button>
+    
+      </td>
+  </tr>
+</table>
+</div>
